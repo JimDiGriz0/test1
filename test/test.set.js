@@ -3,13 +3,13 @@ import { strict as assert } from 'node:assert';
 
 const obj = {};
 
-assert.deepEqual(
+assert.deepStrictEqual(
   set(obj, 'key1', 'value1'),
   { key1: 'value1' },
   'Функция работает неверно!'
 );
 
-assert.deepEqual(
+assert.deepStrictEqual(
   set(obj, 'key1', 'next value'),
   { key1: 'value1' },
   'Функция работает неверно!'
